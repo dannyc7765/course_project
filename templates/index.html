@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emory CS Course Finder</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #012169 0%, #F2A900 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            animation: fadeIn 0.6s ease-in;
+        }
+
+        .header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 35px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+            animation: slideUp 0.6s ease-out;
+        }
+
+        .input-section {
+            margin-bottom: 25px;
+        }
+
+        .input-section h2 {
+            color: #012169;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .course-input-container {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 14px 18px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #012169;
+            box-shadow: 0 0 0 3px rgba(1, 33, 105, 0.1);
+        }
+
+        button {
+            padding: 14px 28px;
+            background: #012169;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            background: #001845;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(1, 33, 105, 0.3);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .add-course-btn {
+            background: #F2A900;
+        }
+
+        .add-course-btn:hover {
+            background: #d99400;
+        }
+
+        .completed-courses {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+            min-height: 40px;
+        }
+
+        .course-tag {
+            background: linear-gradient(135deg, #012169 0%, #001845 100%);
+            color: white;
+            padding: 10px 16px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            animation: popIn 0.3s ease-out;
+        }
+
+        .course-tag span {
+            font-weight: 600;
+        }
+
+        .remove-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 2px 8px;
+            font-size: 1.2rem;
+            line-height: 1;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        .remove-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .find-btn {
+            width: 100%;
+            font-size: 1.2rem;
+            padding: 18px;
+            background: linear-gradient(135deg, #F2A900 0%, #d99400 100%);
+        }
+
+        .find-btn:hover {
+            background: linear-gradient(135deg, #d99400 0%, #c08400 100%);
+        }
+
+        .results {
+            display: none;
+        }
+
+        .results.show {
+            display: block;
+            animation: slideUp 0.6s ease-out;
+        }
+
+        .results-header {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .results-header h2 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        .level-section {
+            margin-bottom: 35px;
+        }
+
+        .level-section h3 {
+            color: #012169;
+            margin-bottom: 18px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid #F2A900;
+            font-size: 1.4rem;
+        }
+
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 18px;
+        }
+
+        .course-card {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 5px solid #012169;
+            transition: all 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            border-left-color: #F2A900;
+        }
+
+        .course-card h4 {
+            color: #1e293b;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        .course-card p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .empty-state {
+            text-align: center;
+            color: #64748b;
+            padding: 60px;
+            font-size: 1.1rem;
+        }
+
+        .hint {
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-top: 8px;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            color: #012169;
+        }
+
+        .loading.show {
+            display: block;
+        }
+
+        .spinner {
+            border: 3px solid #f3f4f6;
+            border-top: 3px solid #012169;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes popIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .course-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .card {
+                padding: 25px;
+            }
+
+            .course-input-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎓 Emory CS Course Finder</h1>
+            <p>Discover which courses you're eligible to take based on your completed prerequisites</p>
+        </div>
+
+        <div class="card">
+            <div class="input-section">
+                <h2>📚 Your Completed Courses</h2>
+                <p class="hint">Enter courses in format: CS 170, CS 171, MATH 221, etc.</p>
+
+                <div class="course-input-container">
+                    <input type="text" id="courseInput" placeholder="e.g., CS 170" onkeypress="handleKeyPress(event)">
+                    <button class="add-course-btn" onclick="addCourse()">➕ Add Course</button>
+                </div>
+
+                <div class="completed-courses" id="completedCourses"></div>
+            </div>
+
+            <button class="find-btn" onclick="findCourses()">
+                🔍 Find Eligible Courses
+            </button>
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Analyzing your prerequisites...</p>
+        </div>
+
+        <div class="results" id="results">
+            <div class="card">
+                <div class="results-header">
+                    <h2 id="resultsTitle">✓ You can take 0 courses</h2>
+                    <p id="resultsSubtitle"></p>
+                </div>
+
+                <div id="courseResults"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let completedCourses = [];
+
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                addCourse();
+            }
+        }
+
+        function addCourse() {
+            const input = document.getElementById('courseInput');
+            const course = input.value.trim().toUpperCase();
+
+            if (!course) return;
+
+            if (completedCourses.includes(course)) {
+                alert('Course already added!');
+                return;
+            }
+
+            completedCourses.push(course);
+            updateCompletedCoursesDisplay();
+            input.value = '';
+            input.focus();
+        }
+
+        function removeCourse(course) {
+            completedCourses = completedCourses.filter(c => c !== course);
+            updateCompletedCoursesDisplay();
+        }
+
+        function updateCompletedCoursesDisplay() {
+            const container = document.getElementById('completedCourses');
+
+            if (completedCourses.length === 0) {
+                container.innerHTML = '<p class="hint">No courses added yet. Start by adding your completed courses above.</p>';
+                return;
+            }
+
+            container.innerHTML = completedCourses.map(course => `
+                <div class="course-tag">
+                    <span>${course}</span>
+                    <button class="remove-btn" onclick="removeCourse('${course}')" title="Remove">×</button>
+                </div>
+            `).join('');
+        }
+
+        async function findCourses() {
+            if (completedCourses.length === 0) {
+                alert('⚠️ Please add at least one completed course');
+                return;
+            }
+
+            // Show loading
+            document.getElementById('loading').classList.add('show');
+            document.getElementById('results').classList.remove('show');
+
+            try {
+                const response = await fetch('/api/find-courses', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        completed_courses: completedCourses
+                    })
+                });
+
+                const data = await response.json();
+
+                // Hide loading
+                document.getElementById('loading').classList.remove('show');
+
+                displayResults(data);
+            } catch (error) {
+                document.getElementById('loading').classList.remove('show');
+                alert('Error finding courses. Please try again.');
+                console.error(error);
+            }
+        }
+
+        function displayResults(data) {
+            const resultsDiv = document.getElementById('results');
+            const resultsTitle = document.getElementById('resultsTitle');
+            const resultsSubtitle = document.getElementById('resultsSubtitle');
+            const courseResults = document.getElementById('courseResults');
+
+            resultsTitle.textContent = `✓ You can take ${data.eligible_count} courses`;
+            resultsSubtitle.textContent = `Based on ${data.completed_count} completed course${data.completed_count !== 1 ? 's' : ''}`;
+
+            let html = '';
+
+            ['100', '200', '300', '400'].forEach(level => {
+                const courses = data.eligible_by_level[level];
+
+                if (courses && courses.length > 0) {
+                    html += `
+                        <div class="level-section">
+                            <h3>${level}-Level Courses (${courses.length})</h3>
+                            <div class="course-grid">
+                    `;
+
+                    courses.sort((a, b) => a.code.localeCompare(b.code)).forEach(course => {
+                        html += `
+                            <div class="course-card">
+                                <h4>${course.code}: ${course.name}</h4>
+                                <p>${course.description}</p>
+                            </div>
+                        `;
+                    });
+
+                    html += `
+                            </div>
+                        </div>
+                    `;
+                }
+            });
+
+            if (html === '') {
+                html = '<div class="empty-state"><p>🤔 No eligible courses found with your current prerequisites. Try adding more courses!</p></div>';
+            }
+
+            courseResults.innerHTML = html;
+            resultsDiv.classList.add('show');
+
+            // Smooth scroll to results
+            setTimeout(() => {
+                resultsDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
+        }
+
+        // Initialize
+        updateCompletedCoursesDisplay();
+    </script>
+</body>
+
+</html>

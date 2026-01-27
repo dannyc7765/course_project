@@ -1,0 +1,443 @@
+[
+  {
+    "course_code": "CS 110",
+    "course_name": "Computer Science Fundamentals",
+    "description": "A general introduction to computer science including an overview of hardware systems, programming essentials, algorithm design, data handling, and networking. Not intended for students needing a programming background for further work in computer science.",
+    "credit_hours": "3",
+    "ger": "QR",
+    "requisites": "None",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 130R",
+    "course_name": "Selected Programming Languages",
+    "description": "Introductory course in a rotating series of computer languages. Please see current atlas for language offering.",
+    "credit_hours": "2",
+    "ger": "None",
+    "requisites": "None",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 153",
+    "course_name": "Computing for Bioinformatics",
+    "description": "An introduction to tools of computer science that are relevant to bioinformatics, with a focus on fundamental problems with sequence data. Practical topics will include Python programming, data management, and web services. Computational concepts are emphasized with examples from underlying biology.",
+    "credit_hours": "3",
+    "ger": "SNT",
+    "requisites": "None",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 155",
+    "course_name": "Intro to Business Computing",
+    "description": "Intro to tools and concepts of computer science most relevant to business (enterprise) computing and e-commerce. An intro to basic programming principles, page layout and visual interface design, client/server computing, simple techniques for accessing databases, and their algorithmic foundations.",
+    "credit_hours": "3",
+    "ger": "QR",
+    "requisites": "None",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 170",
+    "course_name": "Intro to Computer Science I",
+    "description": "An introduction to Computer Science for students expecting to utilize serious computing in coursework, research, or employment. Emphasis is on computing concepts, programming principles, algorithm development and basic data structures, using the Java programming language and Unix operating system.",
+    "credit_hours": "4",
+    "ger": "QR",
+    "requisites": "None",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 171",
+    "course_name": "Intro.to Computer Science II",
+    "description": "A second course in Computer Science, focusing on intermediate programming. Emphasis is on proficiency in the use and implementation of data structures, algorithms for classical programming paradigms, and object oriented design and programming with Java.",
+    "credit_hours": "3",
+    "ger": "QR",
+    "requisites": "This course requires MUS 221 or equivalent transfer credit as a prerequisite.",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 171Z",
+    "course_name": "Intro to Computer Science II",
+    "description": "An accelerated version of the second course Computer Science for students with advanced preparation e.g. AP CS-A. Emphasis is on proficiency in the use of implementation of data structures, algorithms for classical programming paradigms, and object oriented design and programming with Java.",
+    "credit_hours": "3",
+    "ger": "QR",
+    "requisites": "None",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 185",
+    "course_name": "Topics in Computer Science",
+    "description": "Rotating topics in computer science. May be repeated for credit when the topic varies. Prerequisites and co-requisites depend on the topic offered.",
+    "credit_hours": "1",
+    "ger": "None",
+    "requisites": "None",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 190",
+    "course_name": "Fresh Seminar:Computer Science",
+    "description": "Topics will be anounced each semester when the course is offered.",
+    "credit_hours": "3",
+    "ger": "FS",
+    "requisites": "None",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 211",
+    "course_name": "Intro.Artificial Intelligence",
+    "description": "Fundamentals, modern concepts, and practices in Artificial Intelligence including computational decision making, knowledge-based agents, propositional logic, search, heuristics, and machine learning. Assessment includes exams and hands-on projects based on real-world problems.",
+    "credit_hours": "3",
+    "ger": "None",
+    "requisites": "(MATH 111 or MATH_OX 111 or QTM 100 or QTM_OX 100) and (CS 110 or CS 170 or CS_OX 170) or equivalent transfer credit as prerequisites.",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 224",
+    "course_name": "Foundations of Comp.Science",
+    "description": "An introductory course in the theory of Computer Science, focusing on analysis of discrete structures with applications. Emphasis is on developing familiarity with notation, computational acuity and creative problem solving skills.",
+    "credit_hours": "3",
+    "ger": "QR",
+    "requisites": "(CS 170 or CS_OX 170) and (MATH 111 or MATH_OX 111) or equivalent transfer credit as prerequisites.",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 253",
+    "course_name": "Data Structures and Algorithms",
+    "description": "A third course in Computer Science, focusing on advanced programming. Emphasis is on mastery in the use and implementation of data structures and algorithms for classical programming paradigms, using the Java programming language and object oriented design.",
+    "credit_hours": "3",
+    "ger": "QR",
+    "requisites": "CS 171 or 171Z or CS_OX 171 or equivalent transfer credit as a prerequisite.",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 255",
+    "course_name": "Comp.Arch./Machine Level Prog.",
+    "description": "Introductory systems course in Computer Science, with a focus on high level computer architecture and assembler programming. Emphasis is on comprehension of von Neumann computer architecture, information encoding and data representation, and assembler equivalents of high level programming constructs.",
+    "credit_hours": "3",
+    "ger": "QR",
+    "requisites": "This course requires CS 171 or CS 171Z or CS_OX 171 or equivalent transfer credit as a prerequisite.",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 285",
+    "course_name": "Topics in Computer Science",
+    "description": "Rotating topics in computer science. May be repeated for credit when the topic varies. Pre and co requisites depend on the topic offered.",
+    "credit_hours": "1 - 4",
+    "ger": "None",
+    "requisites": "None",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 312",
+    "course_name": "Computing, AI, Ethics, and Soc",
+    "description": "Understanding ethical and societal concerns introduced by computing and AI into human life, including privacy, online influence and disinformation, information ownership and responsibility, fairness and bias in computer and AI technologies such as facial recognition and robotic systems.",
+    "credit_hours": "3",
+    "ger": "None",
+    "requisites": "CS 211 or CS 323 or CS 325 or CS 334 or CS 470 or equivalent transfer credit as prerequisite.",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 323",
+    "course_name": "Machine Learning Applications",
+    "description": "Machine learning techniques and their use in solving problems from multiple real-world domains. Topics covered include data analytics, regression, classification, clustering, decision trees, and neural networks using Python libraries. Focuses on applications and use rather than algorithms or theory.",
+    "credit_hours": "3",
+    "ger": "None",
+    "requisites": "None",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 325",
+    "course_name": "Artificial Intelligence",
+    "description": "Foundations and problems of machine intelligence, application areas, representation of knowledge, constraint processing, AI programming languages, expert systems, design of an intelligent system.",
+    "credit_hours": "3",
+    "ger": "MQR",
+    "requisites": "(CS 224 or CS_OX 224) and CS 253 or equivalent transfer credit as prerequisite.",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 326",
+    "course_name": "Analysis of Algorithms",
+    "description": "This course explores the formal underpinnings of computational complexity, and studies how to mathematically characterize the efficiency and running times of different computer algorithms.",
+    "credit_hours": "3",
+    "ger": "MQR",
+    "requisites": "(CS 170 or CS_OX 170) and (CS 171 or CS_OX 171) and (CS 224 or CS_OX 224) and CS 253, or equivalent transfer credit as prerequisite.",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 329",
+    "course_name": "Computational Linguistics",
+    "description": "This course will focus on the analysis of syntactic and semantic structures, ontologies and taxonomies, distributional semantics and discourse, as well as their applications in computational linguistics. Assignments will include advanced programming implementations.",
+    "credit_hours": "3",
+    "ger": "MQR",
+    "requisites": "This course requires CS 171 or CS 171Z or CS_OX 171 or equivalent transfer credit as a prerequisite.",
+    "cross_listed": "LING 329"
+  },
+  {
+    "course_code": "CS 334",
+    "course_name": "Machine Learning",
+    "description": "This course will cover the underpinnings, algorithms, and practices that enable a computer to learn. Emphasis will be on fundamental theory and algorithms in statistical machine learning, and approaches to applying machine learning in a variety of domains.",
+    "credit_hours": "3",
+    "ger": "MQR",
+    "requisites": "(CS224 or CS_OX 224) and (CS 253 or CS_OX 253) and (MATH 221 or MATH_OX 221 or MATH 275 or MATH 321) or equivalent transfer credit as prerequisite.",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 350",
+    "course_name": "Systems Programming",
+    "description": "System programming topics are illustrated by the POSIX API to the Linux operating system. Topics include: file i/o, the TTY driver, window systems, processes, shared memory, message passing, semaphores, signals, and interrupt handlers.",
+    "credit_hours": "3",
+    "ger": "MQR",
+    "requisites": "CS 253 and CS 255 or equivalent transfer credit as prerequisites.",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 355",
+    "course_name": "Advanced Computer Architecture",
+    "description": "A second course in computer organization and architecture. Emphasis is on combinatorial and sequential circuits, advanced characteristics of CPU and memory, and micro programming. Multiprocessors, GPUs and selected parallel algorithms will be discussed.",
+    "credit_hours": "3",
+    "ger": "MQR",
+    "requisites": "CS 253 and CS 255 or equivalent transfer credit as prerequisite.",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 370",
+    "course_name": "Computer Science Practicum",
+    "description": "This course introduces basic concepts and techniques of software engineering, and applies these in the context of a semester-long group programming project.",
+    "credit_hours": "3",
+    "ger": "None",
+    "requisites": "CS 253 or equivalent transfer credit as prerequisite.",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 371",
+    "course_name": "Research Practicum in AI",
+    "description": "This course guides students in developing the ability to conduct high-quality research in Artificial Intelligence (AI). Throughout the course, students will work on team projects, write research papers (both individually and in groups), peer-review papers from others, and give public presentations.",
+    "credit_hours": "3",
+    "ger": "None",
+    "requisites": "CS 325 or CS 334 or equivalent transfer credit as prerequisites.",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 371W",
+    "course_name": "Research Practicum in AI",
+    "description": "This course guides students in developing the ability to conduct high-quality research in Artificial Intelligence (AI). Throughout the course, students will work on team projects, write research papers (both individually and in groups), peer-review papers from others, and give public presentations.",
+    "credit_hours": "4",
+    "ger": "CW",
+    "requisites": "CS 325 or CS 334 or equivalent transfer credit as prerequisites.",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 375R",
+    "course_name": "Independ. Software Development",
+    "description": "Prerequisite: permission of instructor. Credit, variable. An independent study course devoted to the development of software projects. Cannot be used to meet course requirements for a CS major.",
+    "credit_hours": "1 - 3",
+    "ger": "None",
+    "requisites": "None",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 377",
+    "course_name": "Database Systems",
+    "description": "Introduction to storage hierarchies, database models, consistency, reliability, and security issues. Query languages and their implementations, efficiency considerations, and compression and encoding techniques.",
+    "credit_hours": "3",
+    "ger": "MQR",
+    "requisites": "CS 253 or equivalent transfer credit as prerequisite.",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 385",
+    "course_name": "Topics in Computer Science",
+    "description": "Rotating topics in computer science. May be repeated for credit when the topic varies. Pre and co requisites depend on the topic offered.",
+    "credit_hours": "1 - 4",
+    "ger": "None",
+    "requisites": "None",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 424",
+    "course_name": "Theory of Computing",
+    "description": "Theory underlying computing concepts, including regular languages, pushdown automata, Turing machines, decidability of problems, time and space complexity and notions of P vs NP and NP-completeness.",
+    "credit_hours": "3",
+    "ger": "MQR",
+    "requisites": "CS 326 or equivalent transfer credit as prerequisite.",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 428",
+    "course_name": "Programming Languages",
+    "description": "Explores the theory, design, & implementation of programming languages. Topics include syntax specification, parsing, formal semantics, functional & logic programming, pattern matching, backtracking, higher-order function, lambda calculus, continuation, parameter passing, meta-circular evaluation.",
+    "credit_hours": "3",
+    "ger": "MQR",
+    "requisites": "CS 224 and CS 253 or equivalent transfer credit as prerequisites.",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 429",
+    "course_name": "Structure of Info.Networks",
+    "description": "This course studies connectedness of social, technological, and biological networks, covering models for information spread, formation of communities, the WWW graph, connection strength, and related topics, including methods to explain and exploit the structure of information and social networks.",
+    "credit_hours": "3",
+    "ger": "MQR",
+    "requisites": "(CS 224 or CS_OX 224) and (CS 253 or CS_OX 253) or equivalent transfer credit as prerequisite.",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 441",
+    "course_name": "Information Visualization",
+    "description": "In this course, students 1) will become acquainted with fundamental theories in perceptual psychology that drive visualization design, 2) will be introduced to basic principles of HCI which inform evaluation of interactive visualizations, and 3) will use D3 to develop interactive visualizations.",
+    "credit_hours": "3",
+    "ger": "None",
+    "requisites": "CS 253 or CS_OX 253 or equivalent transfer credit as prerequisite.",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 442",
+    "course_name": "Computer Vision",
+    "description": "This course is an introduction to concepts and applications in computer vision. It discusses cameras and projection models, and the core computer vision applications of visual recognition tasks. It examines low-level image processing methods and the deep learning methods for solving these tasks.",
+    "credit_hours": "3",
+    "ger": "None",
+    "requisites": "CS 334 or equivalent transfer credit as prerequisite.",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 443",
+    "course_name": "Text Proc. w. Neural Networks",
+    "description": "This course offers an exploration into the fundamentals of text processing techniques and their integration with modern neural network architectures. Emphasis is placed on a range of neural networks. Students will learn how to use different types of neural networks for text processing tasks.",
+    "credit_hours": "3",
+    "ger": "None",
+    "requisites": "CS 325 or equivalent transfer credit as prerequisite.",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 444",
+    "course_name": "Deep Learning",
+    "description": "Theoretical and practical aspects of deep learning; classification; feedforward networks; back propagaton; regularization; and convolutional, recurrent, and recursive neural networks.",
+    "credit_hours": "3",
+    "ger": "None",
+    "requisites": "CS 334 or equivalent transfer credit as prerequisite.",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 452",
+    "course_name": "Operating Systems",
+    "description": "The structure and organization of computer operating systems. Process, memory, and I/O management; device drivers, exception handling, and interprocess communication. Students write an operating system as a course-long project.",
+    "credit_hours": "3",
+    "ger": "MQR",
+    "requisites": "CS 350 or equivalent transfer credit as prerequisite.",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 453",
+    "course_name": "Computer Security",
+    "description": "Understanding offense is key to better cyberdefense. We focus on advanced vulnerabilities, exploits and defense technologies. We teach the hacker mindset, ethics as well as C and assembly.",
+    "credit_hours": "3",
+    "ger": "None",
+    "requisites": "CS 350 or equivalent transfer credit as prerequisite.",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 455",
+    "course_name": "Intro to Computer Networking",
+    "description": "Intro to computer networks based on internal structure using the OSI layer model. Topics include: physical layer, data link layer, the network layer (routing algorithms, IP protocol, tunneling), and transport layer (UDP and TCP protocols, NS2 network simulation). Berkeley socket and pthreads APIs.",
+    "credit_hours": "3",
+    "ger": "MQR",
+    "requisites": "CS 350 or equivalent transfer credit as prerequisite.",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 456",
+    "course_name": "Compiler Construction",
+    "description": "Syntax, semantics and pragmatics of computer programming languages, lexical analysis and parsing, code generation, and optimization. Design and implementation of a semester-long compiler project for a simple imperative language.",
+    "credit_hours": "4",
+    "ger": "MQR",
+    "requisites": "CS 326 or equivalent transfer credit as prerequisite.",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 463",
+    "course_name": "Quantum Computing&Information",
+    "description": "An introduction to qubits, quantum gates, quantum circuits, quantum key distribution, quantum teleportation, quantum dense coding, Grover's search algorithm, Shor's factoring algorithm, quantum entanglement and Bell's theorem, and quantum error correction.",
+    "credit_hours": "3",
+    "ger": "SNT",
+    "requisites": "PHYS 220 or MATH 221 or MATH_OX 221 or equivalent transfer credit as prerequisite.",
+    "cross_listed": "PHYS 463"
+  },
+  {
+    "course_code": "CS 470",
+    "course_name": "Data Mining",
+    "description": "Data mining techniques including data pre-processing, data warehousing and management, dimension reduction, clustering, similarity search, graphical models, spatiotemporal data mining.",
+    "credit_hours": "3",
+    "ger": "MQR",
+    "requisites": "CS 224 and CS 253 or equivalent transfer credit as prerequisites.",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 480",
+    "course_name": "Computing Methods in Economics",
+    "description": "This course introduces students to the use of advanced computer science techniques for the economic analysis of observational data. It covers multi-processing programming for economic policy simulation, web scraping for sentiment analysis, and network data and social interaction models.",
+    "credit_hours": "3",
+    "ger": "None",
+    "requisites": "ECON 320 & CS 334 or equivalent transfer credit as prerequisites.",
+    "cross_listed": "ECON 480"
+  },
+  {
+    "course_code": "CS 485",
+    "course_name": "Topics in Computer Science",
+    "description": "May be repeated for credit when topic varies. Pre/co-requisites vary with topic.",
+    "credit_hours": "1 - 4",
+    "ger": "None",
+    "requisites": "None",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 485W",
+    "course_name": "Topics in Computer Science",
+    "description": "May be repeated for credit when topic varies. Pre/co-requisites vary with topic.",
+    "credit_hours": "1 - 5",
+    "ger": "CW",
+    "requisites": "None",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 495A",
+    "course_name": "Honors",
+    "description": "Enrollment limited to departmental majors invited to participate in the Honors Program.",
+    "credit_hours": "1 - 4",
+    "ger": "XA",
+    "requisites": "None",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 495BW",
+    "course_name": "Honors",
+    "description": "Enrollment limited to departmental majors invited to participate in the Honors Program.",
+    "credit_hours": "1 - 8",
+    "ger": "CW",
+    "requisites": "None",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 497R",
+    "course_name": "Directed Research",
+    "description": "Students conduct directed or supervised research in support of a faculty member's research project or agenda. Permission of the department and a supervising faculty member is required.Three combined credits of CS 497R, CS 498R and CS 499R may be used to fulfill a maximum of one 400-level elective for Computer Science majors.",
+    "credit_hours": "1 - 4",
+    "ger": "XA",
+    "requisites": "None",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 498R",
+    "course_name": "Directed Reading",
+    "description": "Students study, read, and write on a topic under the direction or supervision of a faculty member. Permission of the department and a supervising faculty member is required. Three combined credits of CS 497R, CS 498R and CS 499R may be used to fulfill a maximum of one 400-level elective for Computer Science majors.",
+    "credit_hours": "1 - 4",
+    "ger": "None",
+    "requisites": "None",
+    "cross_listed": "None"
+  },
+  {
+    "course_code": "CS 499R",
+    "course_name": "Independent Research",
+    "description": "Students conduct independent research in support of their own research agenda or question with guidance from a faculty member. Permission of the department and a supervising faculty member is required. Three combined credits of CS 497R, CS 498R and CS 499R may be used to fulfill a maximum of one 400-level elective for Computer Science majors.",
+    "credit_hours": "1 - 4",
+    "ger": "XA",
+    "requisites": "None",
+    "cross_listed": "None"
+  }
+]

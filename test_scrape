@@ -1,0 +1,32 @@
+import requests
+from bs4 import BeautifulSoup
+
+url = "https://catalog.college.emory.edu/academics/departments/computer-science.html"
+
+print("Fetching page...")
+response = requests.get(url)
+soup = BeautifulSoup(response.content, 'html.parser')
+
+# Check what we can find
+print("\n1. Looking for accordion divs...")
+accordions = soup.find_all('div', class_='accordion')
+print(f"   Found {len(accordions)} accordion divs")
+
+print("\n2. Looking for card divs...")
+cards = soup.find_all('div', class_='card')
+print(f"   Found {len(cards)} card divs")
+
+print("\n3. Looking for any divs with 'CS' in text...")
+all_text = soup.get_text()
+if "CS 334" in all_text:
+    print("   ✓ Found 'CS 334' in page text")
+else:
+    print("   ✗ Did not find 'CS 334' in page text")
+
+print("\n4. Checking page length...")
+print(f"   Page HTML length: {len(response.content)} bytes")
+
+print("\n5. First 500 characters of body:")
+body = soup.find('body')
+if body:
+    print(body.get_text()[:500])
